@@ -31,6 +31,10 @@ public class MainActivity extends AppCompatActivity {
         Intent it = new Intent(this,homepage.class);
         startActivity(it);
     }
+    public void fillProject(View v){
+        Intent it = new Intent(this,fillProject.class);
+        startActivity(it);
+    }
 
     public void fillProject(View v){
         Intent it = new Intent(this,fillProject.class);
