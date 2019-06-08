@@ -121,18 +121,20 @@
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="match_parent"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:layout_marginRight="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:gravity="center">
 
             <ImageView
                 android:id="@+id/imageView4"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/img8" />
+                android:layout_width="250dp"
+                android:layout_height="375dp"
+                app:srcCompat="@drawable/img8"
+                android:scaleType="fitXY"
+                />
         </LinearLayout>
 
         <LinearLayout
@@ -148,14 +150,24 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="fill_parent"
                 android:layout_height="fill_parent" >
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="0dp"
-                    android:text="狼是社會性的獵食動物，狼群以核心家庭的形式組成，包括一對配偶、及其子女，有時也包括收養的未成年幼狼。狼屬於典型的食物鏈上層掠食者。在它們的棲息地中，只有人類和老虎對它們構成實質威脅。它們通常群體行動，由於狼會捕食羊等家畜，因此直到20世紀末期前都被人類大量捕殺，一些亞種如日本狼、紐芬蘭狼等都已經絕種，雖然有一些其它亞種已經確認，但亞種的確切數量仍舊未定。"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textSize="20dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:text="    狼是社會性的獵食動物，狼群以核心家庭的形式組成，包括一對配偶、及其子女，有時也包括收養的未成年幼狼。狼屬於典型的食物鏈上層掠食者。在它們的棲息地中，只有人類和老虎對它們構成實質威脅。它們通常群體行動，由於狼會捕食羊等家畜，因此直到20世紀末期前都被人類大量捕殺，一些亞種如日本狼、紐芬蘭狼等都已經絕種，雖然有一些其它亞種已經確認，但亞種的確切數量仍舊未定。"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
 
             </ScrollView>
 

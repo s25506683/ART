@@ -18,5 +18,10 @@ public class homepage extends AppCompatActivity {
         startActivity(it);
     }
 
+    public void order(View v){
+        Intent it = new Intent(this,FillOrder.class);
+        startActivity(it);
+    }
+
 }
 
