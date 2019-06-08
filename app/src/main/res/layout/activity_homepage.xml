@@ -54,7 +54,7 @@
 
 
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView1"
             android:layout_marginLeft="15dp"
             android:layout_width="250dp"
@@ -64,7 +64,7 @@
             android:layout_marginTop="15dp"/>
 
 
-        <ImageView
+        <ImageButton
             android:id="@+id/imageView6"
             android:layout_marginLeft="15dp"
             android:layout_width="250dp"

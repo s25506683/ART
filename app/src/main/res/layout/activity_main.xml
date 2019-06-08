@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:onClick="gotopg2"
+        android:onClick="homepage"
         android:text="登入" />
 
     <TextView

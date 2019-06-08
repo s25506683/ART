@@ -27,5 +27,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(it);
     }
 
+    public void homepage(View v){
+        Intent it = new Intent(this,homepage.class);
+        startActivity(it);
+    }
+
 
 }
