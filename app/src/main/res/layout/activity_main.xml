@@ -4,89 +4,66 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/img_background"
 
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="40dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text=""
-        android:textSize="20dp" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="帳號"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="20dp" />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_icon"/>
+
+
 
     <EditText
-        android:id="@+id/userid"
-        android:layout_width="325dp"
+        android:id="@+id/NameText22"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:singleLine="true"/>
+        android:ems="10"
+        android:hint="請輸入帳號"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:layout_marginTop="30dp"/>
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="密碼"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:textSize="20dp" />
 
     <EditText
-        android:id="@+id/userpassword"
-        android:layout_width="325dp"
+        android:id="@+id/NameText"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:singleLine="true"/>
+        android:ems="10"
+        android:hint="請輸入密碼"
+        android:maxLength="10"
+        android:singleLine="true"
+        android:layout_marginTop="30dp"/>
 
     <Button
         android:id="@+id/btn_Login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="38dp"
         android:layout_marginTop="20dp"
         android:onClick="homepage"
-        android:text="登入" />
+        android:text="登入"
+        android:background="#00BBFF"/>>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text=""
-        android:textSize="20dp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="-------------使用其他方式登入-------------"
-        android:id="@+id/textView3"
-        android:textSize="20dp" />
 
     <Button
         android:id="@+id/btn_Login2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_width="220dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="10dp"
         android:onClick="fillProject"
-        android:text="使用google登入" />
+        android:text="google登入"
+        android:background="#00BBFF"/>>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="47dp"
         android:orientation="horizontal"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="50dp"
         >
 
         <Button
@@ -95,6 +72,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="register"
+            android:background="#00FFCC"
             android:text="申請帳號" />
 
         <Button
@@ -103,6 +81,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:onClick="fillOrder"
+            android:background="#00FFCC"
             android:text="忘記密碼" />
     </LinearLayout>
 
