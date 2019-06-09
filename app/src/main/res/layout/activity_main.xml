@@ -24,6 +24,7 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="請輸入帳號"
+        android:inputType="text"
         android:maxLength="10"
         android:singleLine="true"
         android:layout_marginTop="30dp"/>
@@ -36,6 +37,7 @@
         android:ems="10"
         android:hint="請輸入密碼"
         android:maxLength="10"
+        android:inputType="textPassword"
         android:singleLine="true"
         android:layout_marginTop="30dp"/>
 
