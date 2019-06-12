@@ -20,12 +20,13 @@
             android:src="@drawable/house_outline"/>
 
         <ImageButton
-            android:id="@+id/imageView45"
+            android:id="@+id/search"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_marginLeft="20dp"
+            android:onClick="search"
             android:scaleType="fitXY"
-            android:src="@drawable/search"/>
+            android:src="@drawable/search" />
 
         <ImageButton
             android:id="@+id/imageView47"

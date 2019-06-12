@@ -23,5 +23,12 @@ public class homepage extends AppCompatActivity {
         startActivity(it);
     }
 
+    public void search(View v){
+        Intent it = new Intent(this,search.class);
+        startActivity(it);
+    }
+
+
+
 }
 
