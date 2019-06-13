@@ -109,7 +109,7 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:gravity="left|top"
-            android:hint="價格"
+            android:hint="價格（金額/張）"
             android:inputType="number"
             android:maxLength="6" />
 
@@ -120,8 +120,19 @@
             android:layout_marginTop="20dp"
             android:ems="10"
             android:gravity="left|top"
-            android:hint="日期"
+            android:hint="日期（yyyy/mm/dd）"
             android:inputType="date"
+            android:maxLength="10"/>
+
+        <EditText
+            android:id="@+id/Text2"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:gravity="left|top"
+            android:hint="開始時間（hh:mm）"
+            android:inputType="datetime"
             android:maxLength="10" />
 
         <EditText
@@ -129,9 +140,9 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:ems="10"
+            android:ems="13"
             android:gravity="left|top"
-            android:hint="聯絡電話"
+            android:hint="聯絡電話（xxxx-xxx-xxx）"
             android:inputType="textPersonName"
             android:maxLength="10" />
 
