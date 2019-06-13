@@ -33,7 +33,7 @@
             android:id="@+id/imageView"
             android:layout_marginTop="5dp"
             android:layout_width="278dp"
-            android:layout_height="269dp" />
+            android:layout_height="269dp"/>
     
 
 
