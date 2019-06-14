@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="unit">
+        <item>/天</item>
+        <item>/張</item>
+        <item>/件</item>
+        <item>/小時</item>
+    </string-array>
+</resources>

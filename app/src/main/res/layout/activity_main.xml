@@ -41,6 +41,9 @@
         android:singleLine="true"
         android:layout_marginTop="30dp"/>
 
+
+
+
     <Button
         android:id="@+id/btn_Login"
         android:layout_width="220dp"
@@ -71,6 +74,7 @@
         android:text="google登入"
         android:textColor="#FFFFFF"
         android:textSize="20sp" />
+
 
     <LinearLayout
         android:layout_width="match_parent"
