@@ -19,8 +19,8 @@
         <activity android:name=".fillProject" />
         <activity android:name=".Information" />
         <activity android:name=".homepage" />
-        <activity android:name=".FillOrder" />
         <activity android:name=".Register" />
+        <activity android:name=".FillOrder"/>
         <activity
             android:name=".Pop"
             android:theme="@style/AppTheme.CustomTheme" />

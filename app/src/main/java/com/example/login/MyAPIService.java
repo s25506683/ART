@@ -16,7 +16,7 @@ public interface MyAPIService {
 //    @GET("albums/{id}") // 用{}表示路徑參數，@Path會將參數帶入至該位置
 //    Call<Infor> getAlbumsById(@Path("id") int id);
 
-    @POST("Member?api_key=keyO9ymPqdhm4Fw1f") // 用@Body表示要傳送Body資料
+    @POST("Member?api_key=keys9gKjERVN7YgGk") // 用@Body表示要傳送Body資料
 
     @Headers({
             "Accept: application/json; charset=utf-8",
@@ -24,13 +24,15 @@ public interface MyAPIService {
     })
     Call<Infor> postInfor(@Body Req fields);
 
-    @POST("Member?api_key=keyO9ymPqdhm4Fw1f") // 用@Body表示要傳送Body資料
+    @POST("Order?api_key=keys9gKjERVN7YgGk") // 用@Body表示要傳送Body資料
 
     @Headers({
             "Accept: application/json; charset=utf-8",
             "Content-Type: application/json; charset=utf-8"
     })
-    Call<Infor> postInfor1(@Body Req fields);
+    Call<Infor> postInfor2(@Body Req fields);
+
+
 
     @DELETE("Member/recOzDwjVrTf2rj5b?api_key=keyO9ymPqdhm4Fw1f")
     Call<Infor> deleteInfor();

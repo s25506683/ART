@@ -29,6 +29,7 @@ public class Infor {
     }
 
 
+
 //    public String getfieldsName() {
 //        return getFields().getName();
 //    }
