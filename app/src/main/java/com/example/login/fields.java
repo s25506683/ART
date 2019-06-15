@@ -14,7 +14,7 @@ public class fields {
     private String Order_Place;
     private String Order_Phone;
     private String Order_Detail;
-    private String Order_Price;
+    private int  Order_Price;
     //order
 
 //    private String test;
@@ -29,7 +29,7 @@ public class fields {
         this.Mem_Address = Mem_Address;
     }
 
-    public fields(String Order_Name,String Order_Time,String Order_Place,String Order_Phone,String Order_Detail,String Order_Price){
+    public fields(String Order_Name,String Order_Time,String Order_Place,String Order_Phone,String Order_Detail,int Order_Price){
         this.Order_Name = Order_Name;
         this.Order_Time = Order_Time;
         this.Order_Place = Order_Place;

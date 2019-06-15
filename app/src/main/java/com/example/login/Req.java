@@ -1,6 +1,7 @@
 package com.example.login;
 
 public class Req {
+    public String id;
     private fields fields;
 
     public Req(fields fields) {

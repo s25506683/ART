@@ -104,6 +104,33 @@
 
     //        button_yes = (Button)findViewById(R.id.button_yes);
 
+            //清除
+
+            Button clear = (Button)findViewById(R.id.button_yes);
+            final EditText Text_account=(EditText) findViewById(R.id.Text_account);
+            final EditText Text_password=(EditText) findViewById(R.id.Text_password);
+            final EditText Text_name=(EditText) findViewById(R.id.Text_name);
+            final EditText Text_phone=(EditText) findViewById(R.id.Text_phone);
+            final EditText Text_identity=(EditText) findViewById(R.id.Text_identity);
+            final EditText Text_mail=(EditText) findViewById(R.id.Text_mail);
+            final EditText Text_address=(EditText) findViewById(R.id.Text_address);
+
+            clear.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Text_account.setText("");
+                    Text_password.setText("");
+                    Text_name.setText("");
+                    Text_phone.setText("");
+                    Text_identity.setText("");
+                    Text_mail.setText("");
+                    Text_address.setText("");
+
+
+                }
+            });
+
+            //清除結束
 
 
 
@@ -162,6 +189,8 @@
     //            }
     //        }
     //};
+
+
 
 
 
