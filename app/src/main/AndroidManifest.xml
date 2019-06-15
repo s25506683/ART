@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".search"></activity>
+        <activity android:name=".contact"></activity>
+        <activity android:name=".orderlist" />
+        <activity android:name=".viewOrder" />
+        <activity android:name=".search" />
         <activity android:name=".fillProject" />
         <activity android:name=".Information" />
         <activity android:name=".homepage" />

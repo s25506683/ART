@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@drawable/img_background">
+    android:background="@drawable/app_bg">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,15 +46,14 @@
 
     </LinearLayout>
 <ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+    android:layout_height="fill_parent"
+    >
 
 
 
 
-<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -60,7 +61,7 @@
     tools:context=".FillOrder"
     android:layout_marginTop="55dp"
 
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    >
 
     <TextView
         android:id="@+id/textView1"
@@ -73,89 +74,172 @@
 
 
     <LinearLayout
+        android:id="@+id/activity_main"
         android:layout_width="match_parent"
-        android:layout_height="863dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="10dp"
         android:gravity="center"
         android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/NameText"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:gravity="left|top"
-            android:hint="請輸入專案名稱"
-            android:maxLength="10"
-            android:singleLine="true" />
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="專案名稱："
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/priceText123"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="請輸入專案名稱"
+                android:gravity="left"
+                android:inputType="number"
+                android:layout_marginLeft="5dp"
+                android:maxLength="6" />
 
-        <EditText
-            android:id="@+id/contentText"
-            android:layout_width="350dp"
-            android:layout_height="273dp"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="left|center"
-            android:hint="商品描述/詳細服務內容"
-            android:inputType="textMultiLine"
-            android:maxLength="300"
-            android:singleLine="false" />
+        </LinearLayout>
 
-        <EditText
-            android:id="@+id/priceText"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="left|top"
-            android:hint="價格（金額/張）"
-            android:inputType="number"
-            android:maxLength="6" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
 
-        <EditText
-            android:id="@+id/DateText"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="left|top"
-            android:hint="日期（yyyy/mm/dd）"
-            android:inputType="date"
-            android:maxLength="10"/>
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="日　　期："
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp" />
 
-        <EditText
-            android:id="@+id/Text2"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:gravity="left|top"
-            android:hint="開始時間（hh:mm）"
-            android:inputType="datetime"
-            android:maxLength="10" />
+            <EditText
+                android:id="@+id/DateText"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="請輸入日期"
+                android:layout_marginLeft="5dp"
+                android:inputType="number"
+                android:maxLength="6" />
 
-        <EditText
-            android:id="@+id/phoneText"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:ems="13"
-            android:gravity="left|top"
-            android:hint="聯絡電話（xxxx-xxx-xxx）"
-            android:inputType="textPersonName"
-            android:maxLength="10" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="地　　點："
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/orderPlace"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="請輸入地點"
+                android:gravity="left"
+                android:inputType="number"
+                android:layout_marginLeft="5dp"
+                android:maxLength="6" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="聯絡電話："
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp" />
+            <EditText
+                android:id="@+id/phoneText"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:ems="13"
+                android:gravity="left"
+                android:hint="（xxxx-xxx-xxx）"
+                android:layout_marginLeft="5dp"
+                android:inputType="textPersonName"
+                android:maxLength="10" />
+
+        </LinearLayout>
+
+
 
         <EditText
             android:id="@+id/otherText"
-            android:layout_width="350dp"
+            android:layout_width="370dp"
             android:layout_height="134dp"
-            android:layout_marginTop="20dp"
             android:ems="10"
-            android:gravity="left|top"
+            android:gravity="center"
             android:hint="備註（或備案）"
             android:inputType="textMultiLine"
+            android:background="@drawable/radius"
             android:maxLength="100" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="最終價格："
+                android:textColor="#000000"
+                android:layout_marginLeft="20dp"
+                android:textSize="20dp" />
+
+            <EditText
+                android:id="@+id/priceText"
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="left"
+                android:hint="請輸入最終價格"
+                android:inputType="number"
+                android:layout_marginLeft="5dp"
+                android:maxLength="6" />
+
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -172,6 +256,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/radius"
                 android:text="清空" />
 
             <Button
@@ -179,18 +264,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/radius"
                 android:text="確認" />
 
         </LinearLayout>
 
     </LinearLayout>
-
-
-
-
-
-
-
 
 </LinearLayout>
 
