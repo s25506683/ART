@@ -121,6 +121,20 @@ public class FillOrder extends AppCompatActivity {
         //清除結束
 
     }
+    //nav_start
+    public void search(View v){
+        Intent it = new Intent(this,search.class);
+        startActivity(it);
+    }
+    public void homepage(View v){
+        Intent it = new Intent(this,homepage.class);
+        startActivity(it);
+    }
+    public void orderlist(View v){
+        Intent it = new Intent(this,orderlist.class);
+        startActivity(it);
+    }
+    //nav_end
 
     public void postinfor(String up_name,String up_time, String up_place, String up_phone, String up_detail, int up_price){
         myAPIService = RetrofitManager.getInstance().getAPI();

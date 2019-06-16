@@ -79,24 +79,29 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="人像"
+                android:textSize="18dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="風景"
+                android:textSize="18dp"
+
                 android:layout_gravity="center"
                 android:layout_weight="1"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="婚紗"
+                android:textSize="18dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"/>
             <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="寵物"
+                android:textSize="18dp"
                 android:layout_gravity="center"
                 android:layout_weight="1"
                 />
@@ -157,7 +162,7 @@
 
             <EditText
                 android:id="@+id/priceText52"
-                android:layout_width="230dp"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:hint="請輸入價格"
@@ -190,6 +195,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/radius"
+                android:onClick="back"
                 android:text="回上頁" />
 
             <Button

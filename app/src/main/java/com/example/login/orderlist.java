@@ -16,4 +16,17 @@ public class orderlist extends AppCompatActivity {
         Intent it = new Intent(this,viewOrder.class);
         startActivity(it);
     }
+
+    public void search(View v){
+        Intent it = new Intent(this,search.class);
+        startActivity(it);
+    }
+    public void homepage(View v){
+        Intent it = new Intent(this,homepage.class);
+        startActivity(it);
+    }
+    public void orderlist(View v){
+        Intent it = new Intent(this,orderlist.class);
+        startActivity(it);
+    }
 }

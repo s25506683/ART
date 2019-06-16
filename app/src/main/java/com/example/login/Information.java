@@ -17,4 +17,17 @@ public class Information extends AppCompatActivity {
         Intent it = new Intent(this,contact.class);
         startActivity(it);
     }
+
+    public void search(View v){
+        Intent it = new Intent(this,search.class);
+        startActivity(it);
+    }
+    public void homepage(View v){
+        Intent it = new Intent(this,homepage.class);
+        startActivity(it);
+    }
+    public void orderlist(View v){
+        Intent it = new Intent(this,orderlist.class);
+        startActivity(it);
+    }
 }

@@ -1,6 +1,6 @@
     package com.example.login;
 
-    import android.content.DialogInterface;
+
     import android.content.Intent;
     import android.net.Uri;
     import android.provider.MediaStore;
@@ -22,7 +22,7 @@
 
         MyAPIService myAPIService;
         //first step 宣告 start
-        private Button submit,btn_yes;
+        private Button submit;
         private EditText account;
         private EditText password;
         private EditText name;
@@ -132,9 +132,6 @@
 
             //清除結束
 
-
-
-
         }
 
         public void postinfor(String up_account, String up_password, String up_name, String up_phone,String up_identity, String up_mail,String up_address) {
@@ -159,7 +156,6 @@
             startActivityForResult(gallery, PICK_IMAGE);
 
         }
-
         @Override
         protected void onActivityResult(int requestCode, int resultCode,Intent data){
             super.onActivityResult(requestCode, resultCode, data);
@@ -189,9 +185,5 @@
     //            }
     //        }
     //};
-
-
-
-
 
     }

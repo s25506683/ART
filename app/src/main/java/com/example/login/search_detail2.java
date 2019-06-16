@@ -5,22 +5,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-public class homepage extends AppCompatActivity {
+public class search_detail2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homepage);
-    }
-
-    public void information(View v){
-        Intent it = new Intent(this,Information.class);
-        startActivity(it);
-    }
-
-    public void orderlist(View v){
-        Intent it = new Intent(this,orderlist.class);
-        startActivity(it);
+        setContentView(R.layout.activity_search_detail2);
     }
 
     public void search(View v){
@@ -28,16 +18,12 @@ public class homepage extends AppCompatActivity {
         startActivity(it);
     }
 
-    public void fillProject(View v){
-        Intent it = new Intent(this,fillProject.class);
-        startActivity(it);
-    }
     public void homepage(View v){
         Intent it = new Intent(this,homepage.class);
         startActivity(it);
     }
-
-
-
+    public void orderlist(View v){
+        Intent it = new Intent(this,orderlist.class);
+        startActivity(it);
+    }
 }
-
