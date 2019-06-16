@@ -55,5 +55,15 @@ public class fields {
         return Mem_Account;
     }
 
+    public String getMem_Password(){
+        return Mem_Password;
+    }
+
+    //晚上改的
+//    public String getMem_account() {
+//        return Mem_Account;
+//    }
+    //晚上改的
+
 
 }

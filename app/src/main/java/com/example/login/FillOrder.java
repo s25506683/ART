@@ -77,7 +77,7 @@ public class FillOrder extends AppCompatActivity {
                                     up_detail = Detail.getText().toString().trim();
                                     up_price =Integer.parseInt(Price.getText().toString());
                                     postinfor(up_name, up_time, up_place, up_phone, up_detail, up_price);
-                                    finish();
+                                    orderlist();
                                 }
                             })//設定結束的子視窗
                             .show();//呈現對話視窗
@@ -130,7 +130,7 @@ public class FillOrder extends AppCompatActivity {
         Intent it = new Intent(this,homepage.class);
         startActivity(it);
     }
-    public void orderlist(View v){
+    public void orderlist(){
         Intent it = new Intent(this,orderlist.class);
         startActivity(it);
     }

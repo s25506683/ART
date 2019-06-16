@@ -15,4 +15,10 @@ public class Req {
     public void setFields(com.example.login.fields fields) {
         this.fields = fields;
     }
+
+    //晚上改的
+//    public fields getFields() {
+//        return fields;
+//    }
+    //晚上改的
 }

@@ -76,8 +76,23 @@
                     up_identity = identity.getText().toString().trim();
                     up_mail = mail.getText().toString().trim();
                     up_address = address.getText().toString().trim();
-                    postinfor(up_account, up_password, up_name, up_phone, up_identity, up_mail, up_address);
-                }
+
+                    //晚上改的
+                    if(up_account.equals("") || up_password.equals("") || up_name == null || up_phone.equals("") ||up_identity.equals("")
+                            || up_mail.equals("")|| up_address.equals(""))
+                    {
+                        Toast.makeText(Register.this,"有必填欄位未填!",Toast.LENGTH_SHORT).show();
+                    }else
+                        getInfor(up_account, up_password, up_name, up_phone, up_identity, up_mail, up_address);
+                    }
+                    //晚上改的
+
+
+
+
+
+
+
             });
 
             //third step 按下submit按鈕，把edittext丟到宣告的字串中 end
@@ -134,22 +149,56 @@
 
         }
 
-        public void postinfor(String up_account, String up_password, String up_name, String up_phone,String up_identity, String up_mail,String up_address) {
+        public void getInfor(final String up_account, final String up_password, final String up_name, final String up_phone, final String up_identity, final String up_mail, final String up_address) {
             myAPIService = RetrofitManager.getInstance().getAPI();
-            Call<Infor> call = myAPIService.postInfor(new Req(new fields(up_account,up_name,up_password,up_identity,up_phone,up_mail,up_address)));
+            Call<Infor> call = myAPIService.getInfor();
             call.enqueue(new Callback<Infor>() {
                 @Override
-                public void onResponse(Call<Infor> call, Response<Infor> response) {
-                    Toast.makeText(Register.this, "success", Toast.LENGTH_SHORT).show();
+                public void onResponse(Call<Infor> call, Response<Infor> response) {//如果請求連接資料庫並成功抓到值
+                    int len = response.body().getRecords().length;
+                    System.out.println(len);
+                    int i = 0;
+                    boolean ifExisted = false;
+                    while (i < len) {
+                        if (response.body().getfieldsName(i).equals(up_account)) {
+                            ifExisted = true;
+                            System.out.println(ifExisted);
+                            Toast.makeText(Register.this, "此帳號已存在!", Toast.LENGTH_SHORT).show();
+                            break;
+                        }
+                        i++;
+                    }
+                    if (ifExisted == false) {
+                        postinfor(up_account, up_password, up_name, up_phone, up_identity, up_mail, up_address);
+                    }
                 }
+
                 @Override
                 public void onFailure(Call<Infor> call, Throwable t) {
-                    Toast.makeText(Register.this, "failed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Register.this, "註冊失敗!!", Toast.LENGTH_SHORT).show();
                 }
             });
+        }//asoiduasioudioasu
+
+        //postinfor備份
+            public void postinfor(String up_account, String up_password, String up_name, String up_phone,String up_identity, String up_mail,String up_address) {
+                myAPIService = RetrofitManager.getInstance().getAPI();
+                Call<Infor> call = myAPIService.postInfor(new Req(new fields(up_account,up_name,up_password,up_identity,up_phone,up_mail,up_address)));
+                call.enqueue(new Callback<Infor>() {
+                    @Override
+                    public void onResponse(Call<Infor> call, Response<Infor> response) {
+                        Toast.makeText(Register.this, "註冊成功", Toast.LENGTH_SHORT).show();
+                    }
+                    @Override
+                    public void onFailure(Call<Infor> call, Throwable t) {
+                        Toast.makeText(Register.this, "註冊失敗", Toast.LENGTH_SHORT).show();
+                    }
+                });
+            //postinfor備份
 
 
         }
+
 
         private void openGallery(){
             Intent gallery = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
