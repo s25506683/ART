@@ -114,6 +114,7 @@
                         android:hint="請輸入專案名稱"
                         android:gravity="left"
                         android:inputType="text"
+                        android:singleLine="true"
                         android:layout_marginLeft="5dp"
                         android:maxLength="6" />
 
@@ -142,6 +143,7 @@
                         android:layout_height="wrap_content"
                         android:ems="10"
                         android:gravity="left"
+                        android:singleLine="true"
                         android:hint="請輸入日期"
                         android:layout_marginLeft="5dp"
                         android:inputType="date"
@@ -173,6 +175,7 @@
                         android:layout_marginLeft="5dp"
                         android:ems="10"
                         android:gravity="left"
+                        android:singleLine="true"
                         android:hint="請輸入地點"
                         android:inputType="text"
                         android:maxLength="15" />
@@ -200,6 +203,7 @@
                         android:layout_height="wrap_content"
                         android:ems="13"
                         android:gravity="left"
+                        android:singleLine="true"
                         android:hint="（xxxx-xxx-xxx）"
                         android:layout_marginLeft="5dp"
                         android:inputType="phone"
@@ -217,6 +221,7 @@
                     android:gravity="center"
                     android:hint="備註（或備案）"
                     android:inputType="textMultiLine"
+                    android:singleLine="false"
                     android:background="@drawable/radius"
                     android:maxLength="100" />
                 <LinearLayout
@@ -244,6 +249,7 @@
                         android:gravity="left"
                         android:hint="請輸入最終價格"
                         android:inputType="number"
+                        android:singleLine="true"
                         android:layout_marginLeft="5dp"
                         android:maxLength="6" />
 

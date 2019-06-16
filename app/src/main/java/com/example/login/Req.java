@@ -3,9 +3,14 @@ package com.example.login;
 public class Req {
     public String id;
     private fields fields;
+    private fields_Project fieldsProject;
 
     public Req(fields fields) {
         this.fields = fields;
+    }
+
+    public Req(fields_Project fields){
+        this.fieldsProject = fields;
     }
 
     public fields getFields() {

@@ -36,20 +36,17 @@ public class fields {
         this.Order_Phone = Order_Phone;
         this.Order_Detail = Order_Detail;
         this.Order_Price = Order_Price;
-
     }
 
-    public fields(String Mem_Name) {
-        this.Mem_Name = Mem_Name;
-    }
+//    public fields(String Mem_Name) {
+//        this.Mem_Name = Mem_Name;
+//    }
 
 //    public fields(String test) {
 //        this.test = test;
 //    }
 
-    public String getMem_Name() {
-        return Mem_Name;
-    }
+
 
     public String getMem_Account() {
         return Mem_Account;
@@ -59,11 +56,11 @@ public class fields {
         return Mem_Password;
     }
 
-    //晚上改的
+//    晚上改的
 //    public String getMem_account() {
 //        return Mem_Account;
 //    }
-    //晚上改的
+//    晚上改的
 
 
 }

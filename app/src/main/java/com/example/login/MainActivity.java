@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
     private Button btn_Login;
     private String up_account;
     private String up_password;
+    private long up_passwordlong;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,7 +51,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 up_account = account.getText().toString().trim();
-                up_password = password.getText().toString().trim();
+                up_passwordlong = Long.parseLong(password.getText().toString().trim());
+                up_passwordlong = up_passwordlong%11*771/3*71;
+                up_password = String.valueOf(up_passwordlong);
+                System.out.println(up_password);
                 getInfor(up_account,up_password);
             }
         });

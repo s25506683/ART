@@ -32,6 +32,13 @@ public interface MyAPIService {
     })
     Call<Infor> postInfor2(@Body Req fields);
 
+    @POST("Order?api_key=keys9gKjERVN7YgGk") // 用@Body表示要傳送Body資料
+
+    @Headers({
+            "Accept: application/json; charset=utf-8",
+            "Content-Type: application/json; charset=utf-8"
+    })
+    Call<Infor> postInfor3(@Body Req fields);
 
 
     @DELETE("Member/recOzDwjVrTf2rj5b?api_key=keyO9ymPqdhm4Fw1f")

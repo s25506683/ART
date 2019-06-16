@@ -20,9 +20,9 @@ public class Infor {
         return records[i].id;
     }
 
-    public String getfields(int i) {
-        return records[i].getFields().getMem_Name();
-    }
+//    public String getfields(int i) {
+//        return records[i].getFields().getMem_Name();
+//    }
 
     public String getfieldsAccount(int i) {
         return records[i].getFields().getMem_Account();
@@ -48,11 +48,11 @@ public class Infor {
         return fields;
     }
     //晚上改的
-
-    public Object getfieldsName(int i) {
-        return records[i].getFields().getMem_Name();
-    }
-
+//
+//    public Object getfieldsName(int i) {
+//        return records[i].getFields().getMem_Name();
+//    }
+//
 
 
 //    public String getCreateTime() {

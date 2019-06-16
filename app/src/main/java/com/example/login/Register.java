@@ -40,6 +40,7 @@
         private String up_identity;
         private String up_mail;
         private String up_address;
+        private long up_passwordlong;
 
         ImageView imageView;
         Button button;
@@ -69,8 +70,11 @@
             submit.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+
                     up_account = account.getText().toString().trim();
-                    up_password = password.getText().toString().trim();
+                    up_passwordlong = Long.parseLong(password.getText().toString().trim());
+                    up_passwordlong = up_passwordlong%11*771/3*71;
+                    up_password = String.valueOf(up_passwordlong);
                     up_name = name.getText().toString().trim();
                     up_phone = phone.getText().toString().trim();
                     up_identity = identity.getText().toString().trim();
@@ -160,7 +164,7 @@
                     int i = 0;
                     boolean ifExisted = false;
                     while (i < len) {
-                        if (response.body().getfieldsName(i).equals(up_account)) {
+                        if (response.body().getfieldsAccount(i).equals(up_account)) {
                             ifExisted = true;
                             System.out.println(ifExisted);
                             Toast.makeText(Register.this, "此帳號已存在!", Toast.LENGTH_SHORT).show();
